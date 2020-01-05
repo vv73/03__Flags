@@ -1,0 +1,90 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+    <!-- Прокручиваться будет один элемент — FrameLayout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Флагшток -->
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/metal_staff" />
+
+        <!-- Веревка -->
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:background="@android:color/holo_orange_dark" />
+
+        <LinearLayout
+            android:id="@+id/flags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <!-- Вешаем российский флаг -->
+            <include
+                layout="@layout/flag_ru"
+                android:layout_width="160dp"
+                android:layout_height="120dp" />
+
+            <!-- ...Здесь будут все остальные флаги... -->
+
+            <include
+
+                layout="@layout/flag_fr"
+                android:layout_width="160dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="15dp" />
+
+            <include
+                layout="@layout/flag_bf"
+                android:layout_width="160dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="15dp" />
+
+            <include
+                layout="@layout/flag_bj"
+                android:layout_width="160dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="15dp" />
+
+            <include
+                layout="@layout/flag_jp"
+                android:layout_width="160dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="15dp" />
+
+            <include
+                layout="@layout/flag_pa"
+                android:layout_width="160dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="15dp" />
+
+            <include
+                layout="@layout/flag_dk"
+                android:layout_width="160dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="15dp" />
+
+        </LinearLayout>
+
+        <!-- Затенение веревки -->
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/rope" />
+
+
+    </FrameLayout>
+</ScrollView>
